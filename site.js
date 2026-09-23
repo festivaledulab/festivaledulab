@@ -1,6 +1,8 @@
 /** 공식 접수 주소가 확인되면 email 또는 formEndpoint를 설정하세요. */
 const INQUIRY_CONFIG = { email: '', formEndpoint: '' };
-const PAGE_PATHS = new Set(['/home/', '/about/', '/programs/', '/approach/', '/contact/']);
+const siteScript = document.querySelector('script[src$="site.js"]');
+const SITE_ROOT = new URL('.', siteScript.src).pathname;
+const PAGE_PATHS = new Set(['home', 'about', 'programs', 'approach', 'contact'].map((page) => `${SITE_ROOT}${page}/`));
 const menuButton = document.querySelector('.menu-toggle');
 const navigation = document.querySelector('.primary-nav');
 const dialog = document.querySelector('#privacy-dialog');
