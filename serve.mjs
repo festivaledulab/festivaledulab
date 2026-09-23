@@ -5,7 +5,7 @@ import { dirname, extname, join } from 'node:path';
 
 const root = dirname(fileURLToPath(import.meta.url));
 const mime = { '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.svg': 'image/svg+xml' };
-const publicFiles = new Set(['/', '/index.html', '/styles.css', '/site.js', '/favicon.svg']);
+const publicFiles = new Set(['/', '/index.html', '/styles.css', '/hero-font.css', '/site.js', '/favicon.svg']);
 const port = Number(process.env.PORT || 8000);
 
 createServer(async (request, response) => {
