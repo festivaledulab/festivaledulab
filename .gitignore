@@ -1,0 +1,6 @@
+# Local developer tools and temporary installer files
+.tools/
+
+# Local editor and operating system files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#182a3b" />
+    <meta name="description" content="페스티벌교육연구소에 교육을 문의해 보세요." />
+    <meta property="og:title" content="교육 문의 | 페스티벌교육연구소" />
+    <meta property="og:description" content="페스티벌교육연구소에 교육을 문의해 보세요." />
+    <meta property="og:type" content="website" />
+    <title>교육 문의 | 페스티벌교육연구소</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/site.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">본문 바로가기</a>
+    <header class="site-header" id="top">
+      <div class="header-inner container">
+        <a class="brand" href="/home/" aria-label="페스티벌교육연구소 홈으로">
+          <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+          <span class="brand-name">페스티벌<br />교육연구소</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="메뉴 열기">
+          <span></span><span></span>
+        </button>
+        <nav class="primary-nav" id="primary-nav" aria-label="주 메뉴">
+          <a href="/home/">홈</a>
+          <a href="/about/">연구소 소개</a>
+          <a href="/programs/">교육 안내</a>
+          <a href="/approach/">교육 방식</a>
+          <a class="nav-cta" href="/contact/" aria-current="page">교육 문의 <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
+    <main id="main" data-page="contact">
+      <section class="contact section-pad" id="contact" aria-labelledby="contact-title">
+        <div class="container contact-grid">
+          <div class="contact-copy">
+            <p class="section-kicker light">LET'S TALK <span>04</span></p>
+            <h2 id="contact-title">어떤 교육이<br />필요하신가요?</h2>
+            <p>계획 중인 교육이나 궁금한 점을 남겨주세요. 대상, 주제, 일정이 아직 구체적이지 않아도 괜찮습니다.</p>
+            <div class="contact-details"><span class="contact-spark" aria-hidden="true">✳</span><span>작은 질문에서 좋은 교육이 시작됩니다.</span></div>
+          </div>
+          <div class="contact-panel">
+            <div class="form-heading"><span>EDUCATION INQUIRY</span><span>↗</span></div>
+            <h3>교육 문의</h3>
+            <form id="inquiry-form" novalidate>
+              <div class="field-row">
+                <label>이름 / 담당자명 <span>*</span><input type="text" name="name" autocomplete="name" placeholder="성함을 입력해 주세요" required /></label>
+                <label>기관 / 소속<input type="text" name="organization" autocomplete="organization" placeholder="선택 입력" /></label>
+              </div>
+              <div class="field-row">
+                <label>이메일 <span>*</span><input type="email" name="email" autocomplete="email" placeholder="example@email.com" required /></label>
+                <label>연락처<input type="tel" name="phone" autocomplete="tel" placeholder="선택 입력" /></label>
+              </div>
+              <label>관심 교육 분야 <span>*</span><select name="topic" required><option value="">선택해 주세요</option><option>축제 기획</option><option>축제 운영</option><option>맞춤형 교육</option><option>기타 / 아직 미정</option></select></label>
+              <label>문의 내용 <span>*</span><textarea name="message" rows="5" placeholder="교육 대상, 희망 주제, 일정 등 자유롭게 작성해 주세요" required></textarea></label>
+              <label class="consent"><input type="checkbox" name="consent" required /><span>문의 답변을 위한 개인정보 수집·이용에 동의합니다. <button class="privacy-open" type="button">내용 보기</button></span></label>
+              <button class="button button-dark submit-button" type="submit">문의 내용 준비하기 <span aria-hidden="true">↗</span></button>
+              <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div><a class="footer-brand" href="/home/">페스티벌교육연구소 <span>✳</span></a><p>축제를 만드는 사람을 위한 배움.</p></div>
+        <div class="footer-right"><a href="#top">맨 위로 ↑</a><small>© <span id="year"></span> 페스티벌교육연구소</small></div>
+      </div>
+    </footer>
+    <dialog id="privacy-dialog" class="privacy-dialog" aria-labelledby="privacy-title">
+      <div class="dialog-head"><h2 id="privacy-title">개인정보 수집·이용 안내</h2><button type="button" class="privacy-close" aria-label="닫기">×</button></div>
+      <p>문의 답변을 위해 이름, 이메일, 선택적으로 기관명과 연락처, 문의 내용을 사용합니다. 문의 응대 이외의 목적으로 사용하지 않으며, 실제 접수 채널과 보관 정책이 확정되면 이 안내를 운영 정책에 맞게 갱신해야 합니다.</p>
+      <button type="button" class="button button-dark privacy-confirm">확인</button>
+    </dialog>
+  </body>
+</html>
